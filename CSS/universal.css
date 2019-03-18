@@ -56,3 +56,17 @@ p{
 	font-size: 3vh;
 	color: var(--tertiary-color);
 }
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.col2{
+	float: left;
+	width: 50%;
+}
+.col3{
+	float: left;
+	width: calc(100% / 3);
+}
