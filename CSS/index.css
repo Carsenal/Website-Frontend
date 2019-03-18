@@ -60,6 +60,7 @@ body{
 #lander{
   background: url("/Images/lander.jpg");
   background-position: center;
+  background-size: cover;
 }
 #landerCard{
   width: 30%;
