@@ -1,9 +1,15 @@
-window.onscroll = onScroll;
-
+function initScroll(){
+  window.onscroll = onScroll;
+  document.getElementById("screenContainer").onscroll = onScroll;
+  onScroll();
+}
 function onScroll() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var container = document.getElementById("screenContainer");
+  var winScroll = container.scrollTop;
+  var height = container.scrollHeight - container.offsetHeight;
   var scrolled = (winScroll / height) * 100;
-  document.getElementById("scrollBar").style.height = scrolled + "%";
-  console.log("test'0;");
+  if(scrolled > 100) scrolled = 100;
+  scrolled = (0.87 * scrolled) + 5;
+  document.getElementById("scrollBar").style.height = scrolled + "px";
+  console.log("Scrolled: " + scrolled);
 }

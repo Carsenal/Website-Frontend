@@ -13,10 +13,7 @@ body{
   scroll-snap-align: start;
   height: 100vh;
   width: 100vw;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 24px;
-  padding-bottom: 23px;
+
   background: url("../Images/background.png");
   position: relative;
 }
@@ -34,11 +31,18 @@ body{
   border-color: var(--main-color);
   border-width: 2px;
   border-style: solid;
+  z-index: 12;
 }
 #scrollBar{
-  width: 80%;
+  width: calc(80% - 4px);
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 2px;
+  margin-bottom: 2px;
   padding: 0;
   background-color: var(--main-color);
+  border-radius: 10px;
+  border-color: var(--main-color);
+  border-width: 2px;
+  border-style: solid;
 }
