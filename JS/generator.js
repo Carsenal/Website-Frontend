@@ -9,7 +9,7 @@ function generateHeader(){
   head.appendChild(charset);
   var icon = document.createElement("link");
   icon.setAttribute("rel", "shortcut icon");
-  icon.setAttribute("href", "./Images/icon.ico");
+  icon.setAttribute("href", "/Images/icon.ico");
   head.appendChild(icon);
   var title = document.createElement("title");
   title.innerHTML = "Carson Riker";
@@ -24,6 +24,6 @@ function generateHeader(){
   head.appendChild(author);
   var style = document.createElement("link");
   style.setAttribute("rel", "stylesheet");
-  style.setAttribute("href", "./CSS/universal.css");
+  style.setAttribute("href", "/CSS/universal.css");
   head.appendChild(style);
 }
