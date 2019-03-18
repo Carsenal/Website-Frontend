@@ -1,0 +1,58 @@
+:root{
+  --main-color: #000033;
+  --secondary-color: #FFFFFF;
+  --tertiary-color: #FFFFFF;
+  --main-background: #EDEDED;
+  --secondary-background: #FFFFFF;
+  --tertiary-background: #FFFFFF;
+
+  --primary-font: freight-big-pro;
+  --secondary-font: brandon-grotesque;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+h1{
+	font-family: var(--primary-font);
+	font-size: 75px;
+	margin-bottom: 0px;
+}
+h2{
+	font-family: var(--primary-font);
+	font-size: 3vw;
+	font-weight: 300;
+	transform: skew(-5deg);
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+h3{
+	font-family: var(--secondary-font);
+	font-size: 4vh;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h4{
+	font-family: var(--secondary-font);
+	font-size: 3vh;
+	font-weight: 800;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h5{
+	font-family: var(--secondary-font);
+	font-size: 3vh;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+p{
+	margin-top: 0;
+	font-family: var(--secondary-font);
+	font-size: 3vh;
+	color: var(--tertiary-color);
+}
