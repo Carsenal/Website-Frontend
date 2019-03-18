@@ -1,6 +1,6 @@
 // Generator.js
 // By: Carson Riker
-// Generates header information as well as footer for each document
+// Generates header for documents
 
 function generateHeader(){
   var head = document.getElementsByTagName("head")[0];
