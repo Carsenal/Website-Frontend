@@ -2,3 +2,4 @@
 *.ico
 *.jpg
 *.png
+.vscode/settings.json

@@ -3,6 +3,7 @@ body{
   min-width: 800px;
   min-height: 450px; 
   overflow: hidden;
+  margin: 0;
 }
 ::-webkit-scrollbar {
   height: 0px;
@@ -24,19 +25,33 @@ body{
 }
 .screen{
   scroll-snap-align: start;
-  scroll-padding: 0;
-  scroll-margin: 0;
-  height: calc(100vh - 20px);
-  width: calc(100vw - 88px);
   margin: 0;
-  padding-left: 44px;
-  padding-right: 44px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: url("/Images/background.png");
+  padding: 0;
   position: relative;
   overflow: hidden;
 }
+.leftScreen, .rightScreen{
+  height: 100vh;
+  overflow-y: hidden;
+  padding-bottom: 25px;
+}
+.leftScreen{
+  background-color: var(--secondary-background);
+  color: var(--secondary-color);
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-top: 25px;
+}
+.rightScreen{
+  padding-left: 5px;
+  padding-right: 44px;
+  padding-top: 125px;
+}
+
+.sectionHeader{
+  color: var(--secondary-color);
+}
+
 #scroll{
   position: fixed;
   left: 10px;
@@ -44,7 +59,7 @@ body{
   height: 100px;
   width: 20px;
   border-radius: 10px;
-  border-color: var(--main-color);
+  border-color: var(--secondary-color);
   border-width: 2px;
   border-style: solid;
   z-index: 12;
@@ -56,25 +71,9 @@ body{
   margin-top: 2px;
   margin-bottom: 2px;
   padding: 0;
-  background-color: var(--main-color);
+  background-color: var(--secondary-color);
   border-radius: 10px;
-  border-color: var(--main-color);
+  border-color: var(--secondary-color);
   border-width: 2px;
   border-style: solid;
-}
-
-#lander{
-  background: url("/Images/lander.jpg");
-  background-position: center;
-  background-size: cover;
-}
-#landerCard{
-  
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 25px;
-  text-align: center;
-  background: url("/Images/background.png");
 }
