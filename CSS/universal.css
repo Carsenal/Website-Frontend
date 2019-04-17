@@ -12,6 +12,8 @@
   --content-font: 'Montserrat', sans-serif;
 }
 html{
+	margin: 0;
+	padding: 0;
 	color: var(--main-color);
 	background-color: var(--main-background);
 	font-family: var(--content-font);	
@@ -25,6 +27,11 @@ a{
 a:hover{
 	text-decoration: underline;
 	color: var(--secondary-color);
+}
+
+.flush{
+	margin: 0;
+	padding: 0;
 }
 
 .row:after{

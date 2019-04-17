@@ -4,37 +4,23 @@
   <link rel="stylesheet" href="/CSS/index.css">
   <script src="/JS/generator.js" charset="utf-8" onload="generateHeader()"></script>
 </head>
-<body onload="initScroll()">
-    <div id="scroll">
-      <div id="scrollBar"></div>
-      <script src="/JS/scroll.js" charset="utf-8"></script>
+<body class="flush" onload="initScroll()">
+  <div id="scroll">
+    <div id="scrollBar"></div>
+    <script src="/JS/scroll.js" charset="utf-8"></script>
+  </div>
+  <div class="flush" id="lander">
+    <div id="titleCard">
+      <pre id="title" class="flush"></pre>
+      <pre class="flush">A personal website</pre>
+      <pre class="flush">Eponymously named</pre>
     </div>
-    <div id="screenContainer">
-      <div class="screen row">
-        <div class="leftScreen col2">
-          <h1 class="sectionHeader">About me</h1>
-          <div class="hLine"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non blandit felis, a ullamcorper ipsum. Donec eleifend lorem vel porttitor euismod. Nam malesuada sodales purus, eu dignissim est. Phasellus pulvinar urna quis efficitur bibendum. Sed dapibus sapien at facilisis rutrum. Donec interdum vulputate turpis quis congue. Curabitur at molestie purus. Nam ac semper est. Duis vehicula sapien ut lacinia tempor. Proin sagittis, purus non consectetur dignissim, sem massa ullamcorper quam, et varius ex libero id erat. Integer id urna sollicitudin magna iaculis condimentum quis sed leo. Donec faucibus quam ut mattis interdum.</p>
-          <div class="hLine"></div>
-        </div>
-        <div class="rightScreen col2">
-          <h2>Fast Facts</h2>
-          <h3>My favorite IDE is</h3>
-          <h4></h4>
-        </div>
-      </div>
-      <div class="screen row">
-        <div class="leftScreen col2">
-          <h1 class="sectionHeader">Academics</h1>
-        </div>
-        <div class="rightScreen col2"></div>
-      </div>
-      <div class="screen row">
-          <div class="leftScreen col2">
-            <h1 class="sectionHeader">Professional Expirence</h1>
-          </div>
-          <div class="rightScreen col2"></div>
-        </div>
-    </div>
+    <div id="bottom"></div>
+    <pre id="bottomFire" class="flush"></pre>
+    <script src="/JS/fire.js" onload="initFire()"></script>
+  </div>
+  <div id="spacer"></div>
+  <div id="fadeIn"></div>
+  <div style="height: 700px; width: 100%"></div>
 </body>
 </html>

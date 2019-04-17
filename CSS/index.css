@@ -1,57 +1,55 @@
 body{
-  height:100vh;
-  min-width: 800px;
-  min-height: 450px; 
-  overflow: hidden;
-  margin: 0;
+  min-width: 450px;
 }
+
+#lander{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--secondary-background);
+  text-align: center;
+}
+#titleCard{
+  color: var(--secondary-color);
+  margin-top: calc(50vh - 200px);
+  height: 200px;
+  display: inline-block;
+}
+#bottom{
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(var(--secondary-background), var(--secondary-color));
+  position: absolute;
+  min-width: 450px;
+  bottom: 0;
+}
+#bottomFire{
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: var(--secondary-color);
+  min-width: 450px;
+  overflow: hidden;
+}
+
+#spacer{
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 100px;
+}
+#fadeIn{
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(var(--secondary-color), var(--secondary-background));
+}
+
+
 ::-webkit-scrollbar {
   height: 0px;
   width: 0px;
   background: transparent;
 }
-
-.header{
-  height: 20vh;
-  width: 100%;
-}
-
-#screenContainer{
-  height: 100vh;
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory; 
-  overflow: scroll;
-}
-.screen{
-  scroll-snap-align: start;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-}
-.leftScreen, .rightScreen{
-  height: 100vh;
-  overflow-y: hidden;
-  padding-bottom: 25px;
-}
-.leftScreen{
-  background-color: var(--secondary-background);
-  color: var(--secondary-color);
-  padding-left: 44px;
-  padding-right: 44px;
-  padding-top: 25px;
-}
-.rightScreen{
-  padding-left: 5px;
-  padding-right: 44px;
-  padding-top: 125px;
-}
-
-.sectionHeader{
-  color: var(--secondary-color);
-}
-
 #scroll{
   position: fixed;
   left: 10px;
