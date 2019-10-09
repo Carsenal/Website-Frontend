@@ -1,9 +1,28 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <title>Carson Riker</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Carson Riker">
+  <meta name="description" content="My personal website">
+  <link rel="shortcut icon" href="/Images/icon.ico">
+  <link rel="stylesheet" href="/CSS/universal.css">
   <link rel="stylesheet" href="/CSS/index.css">
-  <script src="/JS/generator.js" charset="utf-8" onload="generateHeader()"></script>
+  <script src="/JS/snap.svg-min.js"></script>
+  <script src="/JS/conwayHandler.js"></script>
+  <script src="/JS/jQuery.min.js"></script>
+  <!-- Hotjar script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:1497813,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script-->
 </head>
+<<<<<<< Updated upstream
 <body onload="initScroll()">
     <div id="scroll">
       <div id="scrollBar"></div>
@@ -36,5 +55,60 @@
           <div class="rightScreen col2"></div>
         </div>
     </div>
+=======
+<body onload="init()">
+  <div id="loader"><link rel="stylesheet" href="/CSS/loader.css"></div>
+  <table id="header"><tr>
+    <td id="siteName">
+      <div class="hid">Welcome to</div>
+      <div class="unhid">carsonriker<span class="hid">.com</span></div>
+    </td>
+    <td>Navigator</td>
+  </tr></table>
+  <svg id="conwayBanner" style="width: 100%; height: 25%" viewBox="-1 -1 200 50" data-tilt></svg>
+  <div class="contentPanel" data-tilt><div class="content">
+    <div class="flush row">
+      <div class="padded column"><h2 class="flush">About me</h2></div>
+      <div class="right padded column"><div id="resumeWrapper"><a id="resume" href="">Resume</a></div></div>
+    </div>
+    <div class="flush row">
+      <div class="padded column">
+        <h3 class="flush">Qualitatively</h3>
+        <p>Hi! My name is Carson Riker, and I'm a </p>
+        <p>My biggest passion is </p>
+      </div>
+      <div class="padded dr column">
+        <h3 class="flush">Quantitatively</h3>
+        <div>My tools</div>
+        <div>My languages</div>
+        <div>My skills</div>
+        <div>My (softer) skills</div>
+        <div>My (secret) skills</div>
+      </div> 
+    </div>
+  </div></div>
+  <div class="contentPanel" data-tilt><div class="content">
+      <h2 class="flush">About this site</h2>
+      <div class="flush row">
+        <div class="padded column">
+          <p>Hi! My name is Carson Riker, and dadadadad</p>
+          <p>My biggest passion is </p>
+        </div>
+        <div class="padded dr column">
+          <h3>The full stack:</h3>
+          <ul>
+            <li><a href="www.github.com">Github</a> for free hosting</li>
+            <li><a href="www.github.com">JQuery</a> for DOM handling</li>
+            <li><a href="www.github.com">tilt.js</a> for parralax hover effect</li>
+            <li><a href="www.github.com">snap.svg</a> for vector graphics</li>
+          </ul>
+        </div> 
+      </div>
+    </div></div>
+  <div class="contentPanel" data-tilt><div class="content">
+    <h2>Contact me</h2>
+  </div></div>
+  <script src="/JS/tilt.jQuery.js" onload="lateInit()"></script>
+>>>>>>> Stashed changes
 </body>
 </html>
