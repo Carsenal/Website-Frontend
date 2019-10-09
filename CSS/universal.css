@@ -34,12 +34,6 @@ a:hover{
 	color: var(--secondary-color);
 }
 
-<<<<<<< Updated upstream
-.row:after{
-	content: "";
-	display: table;
-	clear: both;
-=======
 .flush{
   margin: 0;
   padding: 0;
@@ -47,7 +41,6 @@ a:hover{
 .padded{
   margin: 0;
   padding: 10px;
->>>>>>> Stashed changes
 }
 
 .row{ display: flex; }

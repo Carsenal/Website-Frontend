@@ -1,83 +1,3 @@
-<<<<<<< Updated upstream
-body{
-  height:100vh;
-  min-width: 800px;
-  min-height: 450px; 
-  overflow: hidden;
-  margin: 0;
-}
-::-webkit-scrollbar {
-  height: 0px;
-  width: 0px;
-  background: transparent;
-}
-
-.header{
-  height: 20vh;
-  width: 100%;
-}
-
-#screenContainer{
-  height: 100vh;
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory; 
-  overflow: scroll;
-}
-.screen{
-  scroll-snap-align: start;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-}
-.leftScreen, .rightScreen{
-  height: 100vh;
-  overflow-y: hidden;
-  padding-bottom: 25px;
-}
-.leftScreen{
-  background-color: var(--secondary-background);
-  color: var(--secondary-color);
-  padding-left: 44px;
-  padding-right: 44px;
-  padding-top: 25px;
-}
-.rightScreen{
-  padding-left: 5px;
-  padding-right: 44px;
-  padding-top: 125px;
-}
-
-.sectionHeader{
-  color: var(--secondary-color);
-}
-
-#scroll{
-  position: fixed;
-  left: 10px;
-  top: calc((100vh - 100px)/2);
-  height: 100px;
-  width: 20px;
-  border-radius: 10px;
-  border-color: var(--secondary-color);
-  border-width: 2px;
-  border-style: solid;
-  z-index: 12;
-}
-#scrollBar{
-  width: calc(80% - 4px);
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  padding: 0;
-  background-color: var(--secondary-color);
-  border-radius: 10px;
-  border-color: var(--secondary-color);
-  border-width: 2px;
-  border-style: solid;
-=======
 #header{
     width: 100%;
     height: 25px;
@@ -118,5 +38,4 @@ body{
 #resume:hover{
     background: transparent;
     transition: background-color 1s ease-in-out;
->>>>>>> Stashed changes
 }
